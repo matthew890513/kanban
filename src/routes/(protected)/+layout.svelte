@@ -3,12 +3,15 @@
 
   let open = false;
 
+	export let data;
+  let labels = data.tLabels;
+
   const menuItems = [
-    { name: 'Kits List', href: '/kits-list' },
-    { name: 'Kit New', href: '/kit-new' },
-    { name: 'Stocks', href: '/stocks' },
-    { name: 'Labels', href: '/labels' },
-    { name: 'Salir', href: '/logout' },
+    { name: 'MenuItemKitsList', href: '/kits-list' },
+    { name: 'MenuItemKitNew', href: '/kit-new' },
+    { name: 'MenuItemStocks', href: '/stocks' },
+    { name: 'MenuItemLabels', href: '/labels' },
+    { name: 'MenuItemLogout', href: '/logout' },
   ];
 </script>
 
@@ -24,7 +27,7 @@
   <div class="menu">
     {#each menuItems as item}
       <a href={item.href} class="hover:text-gray-300 transition">
-        {item.name}
+        {labels[item.name]}
       </a>
     {/each}
   </div>
@@ -50,12 +53,12 @@
         class="pl-2 block text-lg hover:text-gray-300 transition"
         on:click={() => open = false}
       >
-        {item.name}
+        {labels[item.name]}
       </a>
     {/each}
   </div>
 {/if}
-<main class="min-h-screen bg-gray-200 p-6">
+<main class="container-layout">
   <slot />
 </main>
 

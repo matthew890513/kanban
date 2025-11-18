@@ -8,5 +8,14 @@
   "LoginErrorEmptyFields": "Please fill in all fields.",
   "LoginRecoveryPassword" : "Recovery Password",
   "LogoutTitle" : "Signing out...",
-  "LoginDescription" : "Please wait a moment."
+  "LoginDescription" : "Please wait a moment.",
+  "MenuItemKitsList": "Kits List",
+  "MenuItemKitNew": "New Kit",
+  "MenuItemStocks": "Stocks",
+  "MenuItemLabels": "Labels",
+  "MenuItemLogout": "Logout",
+  "TitleKitList": "General Kit List",
+  "AddKitBtn": "Add Kit",
+  "AcceptBtn": "Aceptar",
+  "CancelBtn": "Cancel"
 }

@@ -1,4 +1,7 @@
 <script lang="ts">
+	export let data;
+  	let labels = data.tLabels;
+	
 	// Datos iniciales de ejemplo
 	let kits = [
 		{
@@ -69,7 +72,7 @@
 	<!-- Título + Filtro + Botón -->
 	<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
 		<!-- Título -->
-		<h1 class="text-2xl font-bold text-gray-800">Listado General de Kits</h1>
+		<h1 class="text-2xl font-bold text-gray-800">{labels['TitleKitList']}</h1>
 
 		<!-- Contenedor de búsqueda + botón (alineados al final) -->
 		<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:ml-auto">
@@ -86,8 +89,8 @@
 				class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold w-full sm:w-auto"
 				on:click={openDialog}
 			>
-				Agregar Kit
-			</button>
+				{labels['AddKitBtn']}
+		</button>
 		</div>
 	</div>
 
@@ -162,16 +165,16 @@
 			</div>
 
 			<div class="flex justify-end gap-3 mt-6">
-				<button class="px-4 py-2 rounded-lg bg-gray-300 hover:bg-gray-400" on:click={closeDialog}>
-					Cancelar
+				<button class="cancel-button" on:click={closeDialog}>
+					{labels['CancelBtn']}
 				</button>
 
 				<button
-					class="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700"
+					class="primary-button"
 					on:click={agregarKit}
 				>
-					Aceptar
-				</button>
+					{labels['AcceptBtn']}
+			</button>
 			</div>
 		</div>
 	</div>

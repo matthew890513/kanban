@@ -8,5 +8,14 @@
   "LoginErrorEmptyFields": "Por favor llena todos los campos.",
   "LoginRecoveryPassword" : "Recuperar Contraseña",
   "LogoutTitle" : "Cerrando sesión...",
-  "LoginDescription" : "Por favor espera un momento."
+  "LoginDescription" : "Por favor espera un momento.",
+  "MenuItemKitsList": "Lista de Kits",
+  "MenuItemKitNew": "Nuevo Kit",
+  "MenuItemStocks": "Existencias",
+  "MenuItemLabels": "Etiquetas",
+  "MenuItemLogout": "Salir",
+  "TitleKitList": "Listado General de Kits",
+  "AddKitBtn": "Agregar Kit",
+  "AcceptBtn": "Accept",
+  "CancelBtn": "Cancelar"
 }

@@ -162,6 +162,10 @@
     @apply text-gray-600 mt-2
   }
 
+  .container-layout {
+    @apply min-h-screen bg-gray-200 p-6
+  }
+
 }
 
 .dark {
@@ -267,6 +271,10 @@
 
   .card-logout .description {
     @apply text-gray-300
+  }
+
+  .container-layout {
+    @apply bg-gray-900 bg-opacity-80 backdrop-blur-xl text-white
   }
 
 }
