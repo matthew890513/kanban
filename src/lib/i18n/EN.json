@@ -1,0 +1,12 @@
+{
+  "LaucherTitle" : "Kanban",
+  "LaucherLoader" : "Verifying session...",
+  "LoginTitle" : "Login",
+  "LoginUser" : "User:",
+  "LoginPassword" : "Password:",
+  "LoginBtn": "Login",
+  "LoginErrorEmptyFields": "Please fill in all fields.",
+  "LoginRecoveryPassword" : "Recovery Password",
+  "LogoutTitle" : "Signing out...",
+  "LoginDescription" : "Please wait a moment."
+}
