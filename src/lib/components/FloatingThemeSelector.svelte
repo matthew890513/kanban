@@ -40,13 +40,14 @@
 </script>
 
 <!-- Botón flotante -->
-<div
+<button
   class="button-floating bottom-16 z-50"
     on:click={(e) => { 
       e.stopPropagation(); 
       open = !open;
     }}
-    title="Change theme"
+  aria-label="Change theme"
+  title="Change theme"
 >
   {#if $theme === 'light'}
     <span class="w-6 h-6 inline-flex items-center justify-center">☀️</span>
@@ -55,7 +56,7 @@
   {:else}
     <span class="w-6 h-6 inline-flex items-center justify-center">🖥️</span>
   {/if}
-</div>
+</button>
 
 <!-- Dialog -->
 {#if open}

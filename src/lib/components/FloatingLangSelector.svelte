@@ -20,9 +20,10 @@
 </script>
 
 <!-- Botón flotante -->
-<div
+<button
   class="button-floating bottom-4 z-[9999]"
   on:click={() => (open = !open)}
+  aria-label="Change language"
   title="Change language"
 >
   {#if $lang === 'EN'}
@@ -30,7 +31,7 @@
   {:else}
     <img src={i_mex} alt="ES" class="w-6 h-6" />
   {/if}
-</div>
+</button>
 
 <!-- Tooltip flotante -->
 {#if open}

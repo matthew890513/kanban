@@ -33,6 +33,7 @@
   <button 
     class="button-collapse"
     on:click={() => open = !open}
+    aria-label="Open menu"
   >
     <div class="line"></div>
     <div class="line"></div>
